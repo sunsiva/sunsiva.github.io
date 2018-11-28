@@ -1,627 +1,564 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-    <head>        
-        <!-- META SECTION -->
-        <title>IMS-Demo</title>            
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        
-        <link rel="icon" href="favicon.ico" type="image/x-icon" />
-        <!-- END META SECTION -->
-        
-        <!-- CSS INCLUDE -->        
-        <link rel="stylesheet" type="text/css" id="theme" href="css/theme-blue.css"/>
-        <!-- EOF CSS INCLUDE -->                                     
-    </head>
-    <body>
-        <!-- START PAGE CONTAINER -->
-        <div class="page-container">
-            
-            <!-- START PAGE SIDEBAR -->
-            <div class="page-sidebar">
-                <!-- START X-NAVIGATION -->
-                <ul class="x-navigation">
-                    <li class="xn-logo">
-                        <a href="index.html" style="font-size:large"><b>Order Management</b></a>
-                    </li>
-                    <li class="xn-profile">
-                        <a href="#" class="profile-mini">
-                            <img src="img/sunsiva.png" alt="sunsiva" />
-                            <!--<img src="assets/images/users/avatar.jpg" alt="John Doe"/>-->
-                        </a>
-                        <div class="profile">
-                            <div class="profile-image">
-                                <img src="img/sunsiva.png" alt="sunsiva" />
-                                <!--<img src="assets/images/users/avatar.jpg" alt="John Doe"/>-->
-                            </div>
-                            <div class="profile-data">
-                                <div class="profile-data-name">John Doe</div>
-                                <div class="profile-data-title">Sales/Designer</div>
-                            </div>
-                            <div class="profile-controls">
-                                <a href="wo-index.html" class="profile-control-left"><span class="fa fa-info"></span></a>
-                                <a href="wo-index.html" class="profile-control-right"><span class="fa fa-envelope"></span></a>
-                            </div>
-                        </div>
-                    </li>
-                    <!--<li class="xn-title">Navigation</li>-->
-                    <li>
-                        <a href="index.html"><span class="fa fa-desktop"></span> <span class="xn-text">Dashboard</span></a>
-                    </li>
-                    <li class="xn-openable active">
-                        <a href="#"><span class="fa fa-file-text-o"></span> <span class="xn-text"> Work Order</span></a>
-                        <ul>
-                            <li><a href="wo-index.html">All</a></li>
-                            <li><a href="wo-index.html">New</a></li>
-                            <li><a href="wo-index.html">Issued To Production</a></li>
-                            <li><a href="wo-index.html">In Production</a></li>
-                            <li><a href="wo-index.html">On Time</a></li>
-                            <li><a href="wo-index.html">Delayed</a></li>
-                            <li><a href="wo-index.html">Ready For Shipping</a></li>
-                            <li><a href="wo-index.html">Shipped</a></li>
-                            <li><a href="wo-index.html">Complete</a></li>
-                            <li><a href="wo-index.html">Cancelled</a></li>
-                            <li><a href="wo-index.html">Closed</a></li>
-                            <li><a href="wo-index.html">On Hold</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="po-index.html"><span class="fa fa-pencil"></span> <span class="xn-text">Purchase Order</span></a>
-                    </li>
-                    <li>
-                        <a href="quote-index.html"><span class="fa fa-table"></span> <span class="xn-text">Quotations</span></a>
-                    </li>
-                    <li>
-                        <a href="rfq-index.html"><span class="fa fa-bar-chart-o"></span> <span class="xn-text">RFQ</span></a>
-                    </li>
-                    <li>
-                        <a href="cust-index.html"><span class="fa fa-map-marker"></span> <span class="xn-text">Customer</span></a>
-                    </li>
+<head>
+    <!-- META SECTION -->
+    <title>IMS-Demo</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-                </ul>
-                <!-- END X-NAVIGATION -->
-            </div>
-            <!-- END PAGE SIDEBAR -->
-            
-            <!-- PAGE CONTENT -->
-            <div class="page-content">
-                
-               <!-- START X-NAVIGATION VERTICAL -->
-                <ul class="x-navigation x-navigation-horizontal x-navigation-panel">
-                    <!-- TOGGLE NAVIGATION -->
-                    <li class="xn-icon-button">
-                        <a href="#" class="x-navigation-minimize"><span class="fa fa-dedent"></span></a>
-                    </li>
-                    <!-- END TOGGLE NAVIGATION -->
-                    <!-- SEARCH -->
-                    <li class="xn-search">
-                        <form role="form">
-                            <input type="text" name="search" placeholder="Search..."/>
-                        </form>
-                    </li>   
-                    <!-- END SEARCH -->
-                    <!-- SIGN OUT -->
-                    <li class="xn-icon-button pull-right">
-                        <a href="#" class="mb-control" data-box="#mb-signout"><span class="fa fa-sign-out"></span></a>                        
-                    </li> 
-                    <!-- END SIGN OUT -->
-                    <!-- MESSAGES -->
-                    <li class="xn-icon-button pull-right">
-                        <a href="#"><span class="fa fa-comments"></span></a>
-                        <div class="informer informer-danger">2</div>
-                        <div class="panel panel-primary animated zoomIn xn-drop-left xn-panel-dragging">
-                            <div class="panel-heading">
-                                <h3 class="panel-title"><span class="fa fa-comments"></span> Messages</h3>
-                                <div class="pull-right">
-                                    <span class="label label-danger">2 new</span>
-                                </div>
-                            </div>
-                            <div class="panel-body list-group list-group-contacts scroll" style="height: 200px;">
-                                <a href="#" class="list-group-item">
-                                    <div class="list-group-status status-online"></div>
-                                    <img src="assets/images/users/user2.jpg" class="pull-left hide" alt="John Doe" />
-                                    <span class="contacts-title">John Doe</span>
-                                    <p>New Customer Added.</p>
-                                </a>
-                                <a href="#" class="list-group-item">
-                                    <div class="list-group-status status-away"></div>
-                                    <img src="assets/images/users/user3.jpg" class="pull-left hide" alt="Nadia Ali" />
-                                    <span class="contacts-title">Nadia Ali</span>
-                                    <p>New Work Order Created</p>
-                                </a>
-                            </div>
-                            <div class="panel-footer text-center">
-                                <a href="wo-create.html">Show all messages</a>
-                            </div>
-                        </div>
-                    </li>
-                    <!-- END MESSAGES -->
-                    <!-- TASKS -->
-                    <li class="xn-icon-button pull-right">
-                        <a href="#"><span class="fa fa-tasks"></span></a>
-                        <div class="informer informer-warning">3</div>
-                        <div class="panel panel-primary animated zoomIn xn-drop-left xn-panel-dragging">
-                            <div class="panel-heading">
-                                <h3 class="panel-title"><span class="fa fa-tasks"></span> Tasks</h3>
-                                <div class="pull-right">
-                                    <span class="label label-warning">3 active</span>
-                                </div>
-                            </div>
-                            <div class="panel-body list-group scroll" style="height: 200px;">
-                                <a class="list-group-item" href="#">
-                                    <strong>Aluminum Panels</strong>
-                                    <div class="progress progress-small progress-striped active">
-                                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">50%</div>
-                                    </div>
-                                    <small class="text-muted">Tiger Nixon, 2016/10/25 / 50%</small>
-                                </a>
-                                <a class="list-group-item" href="#">
-                                    <strong>Sandwich Panel</strong>
-                                    <div class="progress progress-small progress-striped active">
-                                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">80%</div>
-                                    </div>
-                                    <small class="text-muted">Concrete Canvas, 2016/10/29 / 80%</small>
-                                </a>
-                                <a class="list-group-item" href="#">
-                                    <strong>Aluminum Panels</strong>
-                                    <div class="progress progress-small progress-striped active">
-                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;">95%</div>
-                                    </div>
-                                    <small class="text-muted">AMD Windows, 2016/10/26 / 95%</small>
-                                </a>
-                            </div>
-                            <div class="panel-footer text-center">
-                                <a href="wo-create.html">Show all tasks</a>
-                            </div>
-                        </div>
-                    </li>
-                    <!-- END TASKS -->
-                </ul>
-                <!-- END X-NAVIGATION VERTICAL -->                     
-                
-                <!-- START BREADCRUMB -->
-                <ul class="breadcrumb hide">
-                    <li><a href="#">Home</a></li>                    
-                    <li><a href="#">Tables</a></li>
-                    <li class="active">Data Tables</li>
-                </ul>
-                <!-- END BREADCRUMB -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <!-- END META SECTION -->
+    <!-- CSS INCLUDE -->
+    <link rel="stylesheet" type="text/css" id="theme" href="css/theme-blue.css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <!-- EOF CSS INCLUDE -->
+    <script>
+        $.get("left-menu.html", function (data) {
+            $("#lefnavmenu").replaceWith(data);
+        });
+    </script>
+</head>
+<body>
+    <!-- START PAGE CONTAINER -->
+    <div class="page-container">
 
-                <!-- PAGE TITLE -->
-                <div class="page-title">                    
-                    <h2><span class="fa fa-arrow-circle-o-left"></span> Work Order List</h2>
-                </div>
-                <!-- END PAGE TITLE -->                
-
-                <!-- PAGE CONTENT WRAPPER -->
-                <div class="page-content-wrap">                
-                
-                    <div class="row">
-                        <div class="col-md-12">
-
-                            <!-- START DEFAULT DATATABLE -->
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h3 class="panel-title">Work Order</h3>
-                                    <ul class="panel-controls">
-                                        <li><a href="wo-create.html" title="New Work Order">+</a></li>
-                                        <li><a href="#" class="panel-refresh"><span class="fa fa-refresh"></span></a></li>
-                                        <li><a href="#" class="panel-collapse"><span class="fa fa-angle-down"></span></a></li>
-                                        <!--<li><a href="#" class="panel-remove"><span class="fa fa-times"></span></a></li>-->
-                                    </ul>
-                                </div>
-                                <div class="panel-body">
-                                    <table class="table datatable table-hover" id="tbody">
-                                        <thead>
-                                            <tr>
-                                                <th>#</th>
-                                                <th></th>
-                                                <th>WO #</th>
-                                                <th>Customer Name</th>
-                                                <th>Products</th>
-                                                <th>PO #</th>
-                                                <th>Status</th>
-                                                <th>Date Created</th>
-                                                <th>Due Date</th>
-                                                <th>Order Value</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>1</td>
-                                                <td><input type="checkbox" class="pull-left" /></td>
-                                                <td>WO35478</td>
-                                                <td>Tiger Nixon</td>
-                                                <td>Aluminum Panels</td>
-                                                <td>PO87955</td>
-                                                <td>In Prod</td>
-                                                <td>2016/09/25</td>
-                                                <td>2016/10/25</td>
-                                                <td>$320,800</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>2</td>
-                                                <td><input type="checkbox" class="pull-left" /></td>
-                                                <td>WO35452</td>
-                                                <td>Puravankara Const</td>
-                                                <td>Custom Parts</td>
-                                                <td>PO87455</td>
-                                                <td>Delayed</td>
-                                                <td>2016/08/05</td>
-                                                <td>2011/09/25</td>
-                                                <td>$32,080</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>3</td>
-                                                <td><input type="checkbox" class="pull-left" /></td>
-                                                <td>WO45478</td>
-                                                <td>Vinetta Kitchen</td>
-                                                <td>Aluminum Panels</td>
-                                                <td>PO87987</td>
-                                                <td>New</td>
-                                                <td>2016/09/25</td>
-                                                <td>2016/10/25</td>
-                                                <td>$450,800</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>4</td>
-                                                <td><input type="checkbox" class="pull-left" /></td>
-                                                <td>WO35778</td>
-                                                <td>i9 Building Envlops</td>
-                                                <td>Store front</td>
-                                                <td>PO47955</td>
-                                                <td>Completed</td>
-                                                <td>2016/09/25</td>
-                                                <td>2016/10/14</td>
-                                                <td>$470,800</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>5</td>
-                                                <td><input type="checkbox" class="pull-left" /></td>
-                                                <td>WO75478</td>
-                                                <td>Concrete Canvas</td>
-                                                <td>Sandwich Panel</td>
-                                                <td>PO87945</td>
-                                                <td>In Prod</td>
-                                                <td>2016/08/05</td>
-                                                <td>2016/10/29</td>
-                                                <td>$19,800</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>6</td>
-                                                <td><input type="checkbox" class="pull-left" /></td>
-                                                <td>WO35898</td>
-                                                <td>Silver cladding</td>
-                                                <td>Sandwich Panel</td>
-                                                <td>PO87925</td>
-                                                <td>Closed</td>
-                                                <td>2016/08/20</td>
-                                                <td>2016/09/15</td>
-                                                <td>$320,800</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>7</td>
-                                                <td><input type="checkbox" class="pull-left" /></td>
-                                                <td>WO35488</td>
-                                                <td>AMD Windows</td>
-                                                <td>Special Backpans</td>
-                                                <td>PO87905</td>
-                                                <td>New</td>
-                                                <td>2016/10/15</td>
-                                                <td>2016/11/05</td>
-                                                <td>$780,800</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>8</td>
-                                                <td><input type="checkbox" class="pull-left" /></td>
-                                                <td>WO35468</td>
-                                                <td>Silver Cladding</td>
-                                                <td>Sandwich Panel</td>
-                                                <td>PO87555</td>
-                                                <td>New</td>
-                                                <td>2016/09/01</td>
-                                                <td>2016/11/25</td>
-                                                <td>$620,800</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>9</td>
-                                                <td><input type="checkbox" class="pull-left" /></td>
-                                                <td>WO35418</td>
-                                                <td>AMD Windows</td>
-                                                <td>Aluminum Panels</td>
-                                                <td>PO87905</td>
-                                                <td>In Prod</td>
-                                                <td>2016/04/25</td>
-                                                <td>2016/10/26</td>
-                                                <td>$520,800</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>10</td>
-                                                <td><input type="checkbox" class="pull-left" /></td>
-                                                <td>WO30478</td>
-                                                <td>i9 Building Envlops</td>
-                                                <td>Aluminum Panels</td>
-                                                <td>PO87005</td>
-                                                <td>Closed</td>
-                                                <td>2016/08/05</td>
-                                                <td>2016/10/15</td>
-                                                <td>$920,800</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>11</td>
-                                                <td><input type="checkbox" class="pull-left" /></td>
-                                                <td>WO35478</td>
-                                                <td>Tiger Nixon</td>
-                                                <td>Aluminum Panels</td>
-                                                <td>PO87955</td>
-                                                <td>In Prod</td>
-                                                <td>2016/09/25</td>
-                                                <td>2016/10/25</td>
-                                                <td>$320,800</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>12</td>
-                                                <td><input type="checkbox" class="pull-left" /></td>
-                                                <td>WO35452</td>
-                                                <td>Puravankara Const</td>
-                                                <td>Custom Parts</td>
-                                                <td>PO87455</td>
-                                                <td>Delayed</td>
-                                                <td>2016/08/05</td>
-                                                <td>2011/09/25</td>
-                                                <td>$32,080</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>13</td>
-                                                <td><input type="checkbox" class="pull-left" /></td>
-                                                <td>WO45478</td>
-                                                <td>Vinetta Kitchen</td>
-                                                <td>Aluminum Panels</td>
-                                                <td>PO87987</td>
-                                                <td>New</td>
-                                                <td>2016/09/25</td>
-                                                <td>2016/10/25</td>
-                                                <td>$450,800</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>14</td>
-                                                <td><input type="checkbox" class="pull-left" /></td>
-                                                <td>WO35778</td>
-                                                <td>i9 Building Envlops</td>
-                                                <td>Store front</td>
-                                                <td>PO47955</td>
-                                                <td>Completed</td>
-                                                <td>2016/09/25</td>
-                                                <td>2016/10/14</td>
-                                                <td>$470,800</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>15</td>
-                                                <td><input type="checkbox" class="pull-left" /></td>
-                                                <td>WO75478</td>
-                                                <td>Concrete Canvas</td>
-                                                <td>Sandwich Panel</td>
-                                                <td>PO87945</td>
-                                                <td>In Prod</td>
-                                                <td>2016/08/05</td>
-                                                <td>2016/10/29</td>
-                                                <td>$19,800</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>16</td>
-                                                <td><input type="checkbox" class="pull-left" /></td>
-                                                <td>WO35488</td>
-                                                <td>AMD Windows</td>
-                                                <td>Special Backpans</td>
-                                                <td>PO87905</td>
-                                                <td>New</td>
-                                                <td>2016/10/15</td>
-                                                <td>2016/11/05</td>
-                                                <td>$780,800</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>17</td>
-                                                <td><input type="checkbox" class="pull-left" /></td>
-                                                <td>WO35468</td>
-                                                <td>Silver Cladding</td>
-                                                <td>Sandwich Panel</td>
-                                                <td>PO87555</td>
-                                                <td>New</td>
-                                                <td>2016/09/01</td>
-                                                <td>2016/11/25</td>
-                                                <td>$620,800</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>18</td>
-                                                <td><input type="checkbox" class="pull-left" /></td>
-                                                <td>WO35418</td>
-                                                <td>AMD Windows</td>
-                                                <td>Aluminum Panels</td>
-                                                <td>PO87905</td>
-                                                <td>In Prod</td>
-                                                <td>2016/04/25</td>
-                                                <td>2016/10/26</td>
-                                                <td>$520,800</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>19</td>
-                                                <td><input type="checkbox" class="pull-left" /></td>
-                                                <td>WO30478</td>
-                                                <td>i9 Building Envlops</td>
-                                                <td>Aluminum Panels</td>
-                                                <td>PO87005</td>
-                                                <td>Closed</td>
-                                                <td>2016/08/05</td>
-                                                <td>2016/10/15</td>
-                                                <td>$920,800</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>20</td>
-                                                <td><input type="checkbox" class="pull-left" /></td>
-                                                <td>WO35778</td>
-                                                <td>i9 Building Envlops</td>
-                                                <td>Store front</td>
-                                                <td>PO47955</td>
-                                                <td>Completed</td>
-                                                <td>2016/09/25</td>
-                                                <td>2016/10/14</td>
-                                                <td>$470,800</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>21</td>
-                                                <td><input type="checkbox" class="pull-left" /></td>
-                                                <td>WO75478</td>
-                                                <td>Concrete Canvas</td>
-                                                <td>Sandwich Panel</td>
-                                                <td>PO87945</td>
-                                                <td>In Prod</td>
-                                                <td>2016/08/05</td>
-                                                <td>2016/10/29</td>
-                                                <td>$19,800</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>22</td>
-                                                <td><input type="checkbox" class="pull-left" /></td>
-                                                <td>WO35898</td>
-                                                <td>Silver cladding</td>
-                                                <td>Sandwich Panel</td>
-                                                <td>PO87925</td>
-                                                <td>Closed</td>
-                                                <td>2016/08/20</td>
-                                                <td>2016/09/15</td>
-                                                <td>$320,800</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>23</td>
-                                                <td><input type="checkbox" class="pull-left" /></td>
-                                                <td>WO35898</td>
-                                                <td>Silver cladding</td>
-                                                <td>Sandwich Panel</td>
-                                                <td>PO87925</td>
-                                                <td>Closed</td>
-                                                <td>2016/08/20</td>
-                                                <td>2016/09/15</td>
-                                                <td>$320,800</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>24</td>
-                                                <td><input type="checkbox" class="pull-left" /></td>
-                                                <td>WO35488</td>
-                                                <td>AMD Windows</td>
-                                                <td>Special Backpans</td>
-                                                <td>PO87905</td>
-                                                <td>New</td>
-                                                <td>2016/10/15</td>
-                                                <td>2016/11/05</td>
-                                                <td>$780,800</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>25</td>
-                                                <td><input type="checkbox" class="pull-left" /></td>
-                                                <td>WO35468</td>
-                                                <td>Silver Cladding</td>
-                                                <td>Sandwich Panel</td>
-                                                <td>PO87555</td>
-                                                <td>New</td>
-                                                <td>2016/09/01</td>
-                                                <td>2016/11/25</td>
-                                                <td>$620,800</td>
-                                            </tr>
-
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <!-- END DEFAULT DATATABLE -->
-
-                        </div>
-                    </div>                                
-                    
-                </div>
-                <!-- PAGE CONTENT WRAPPER -->                                
-            </div>    
-            <!-- END PAGE CONTENT -->
+        <!-- START PAGE SIDEBAR -->
+        <div id="lefnavmenu">
+            <!-- START X-NAVIGATION -->
+            <!-- END X-NAVIGATION -->
         </div>
-        <!-- END PAGE CONTAINER -->       
-        
-        <!-- MESSAGE BOX-->
-        <div class="message-box animated fadeIn" data-sound="alert" id="mb-signout">
-            <div class="mb-container">
-                <div class="mb-middle">
-                    <div class="mb-title"><span class="fa fa-sign-out"></span> Log <strong>Out</strong> ?</div>
-                    <div class="mb-content">
-                        <p>Are you sure you want to log out?</p>                    
-                        <p>Press No if youwant to continue work. Press Yes to logout current user.</p>
-                    </div>
-                    <div class="mb-footer">
-                        <div class="pull-right">
-                            <a href="pages-login.html" class="btn btn-success btn-lg">Yes</a>
-                            <button class="btn btn-default btn-lg mb-control-close">No</button>
+        <!-- END PAGE SIDEBAR -->
+        <!-- PAGE CONTENT -->
+        <div class="page-content">
+
+            <!-- START X-NAVIGATION VERTICAL -->
+            <ul class="x-navigation x-navigation-horizontal x-navigation-panel">
+                <!-- TOGGLE NAVIGATION -->
+                <li class="xn-icon-button">
+                    <a href="#" class="x-navigation-minimize"><span class="fa fa-dedent"></span></a>
+                </li>
+                <!-- END TOGGLE NAVIGATION -->
+                <!-- SEARCH -->
+                <li class="xn-search">
+                    <form role="form">
+                        <input type="text" name="search" placeholder="Search..." />
+                    </form>
+                </li>
+                <!-- END SEARCH -->
+                <!-- SIGN OUT -->
+                <li class="xn-icon-button pull-right">
+                    <a href="#" class="mb-control" data-box="#mb-signout"><span class="fa fa-sign-out"></span></a>
+                </li>
+                <!-- END SIGN OUT -->
+                <!-- MESSAGES -->
+                <li class="xn-icon-button pull-right">
+                    <a href="#"><span class="fa fa-comments"></span></a>
+                    <div class="informer informer-danger">2</div>
+                    <div class="panel panel-primary animated zoomIn xn-drop-left xn-panel-dragging">
+                        <div class="panel-heading">
+                            <h3 class="panel-title"><span class="fa fa-comments"></span> Messages</h3>
+                            <div class="pull-right">
+                                <span class="label label-danger">2 new</span>
+                            </div>
                         </div>
+                        <div class="panel-body list-group list-group-contacts scroll" style="height: 200px;">
+                            <a href="#" class="list-group-item">
+                                <div class="list-group-status status-online"></div>
+                                <img src="assets/images/users/user2.jpg" class="pull-left hide" alt="John Doe" />
+                                <span class="contacts-title">John Doe</span>
+                                <p>New Customer Added.</p>
+                            </a>
+                            <a href="#" class="list-group-item">
+                                <div class="list-group-status status-away"></div>
+                                <img src="assets/images/users/user3.jpg" class="pull-left hide" alt="Nadia Ali" />
+                                <span class="contacts-title">Nadia Ali</span>
+                                <p>New Work Order Created</p>
+                            </a>
+                        </div>
+                        <div class="panel-footer text-center">
+                            <a href="wo-create.html">Show all messages</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- END MESSAGES -->
+                <!-- TASKS -->
+                <li class="xn-icon-button pull-right">
+                    <a href="#"><span class="fa fa-tasks"></span></a>
+                    <div class="informer informer-warning">3</div>
+                    <div class="panel panel-primary animated zoomIn xn-drop-left xn-panel-dragging">
+                        <div class="panel-heading">
+                            <h3 class="panel-title"><span class="fa fa-tasks"></span> Tasks</h3>
+                            <div class="pull-right">
+                                <span class="label label-warning">3 active</span>
+                            </div>
+                        </div>
+                        <div class="panel-body list-group scroll" style="height: 200px;">
+                            <a class="list-group-item" href="#">
+                                <strong>Aluminum Panels</strong>
+                                <div class="progress progress-small progress-striped active">
+                                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">50%</div>
+                                </div>
+                                <small class="text-muted">Tiger Nixon, 2016/10/25 / 50%</small>
+                            </a>
+                            <a class="list-group-item" href="#">
+                                <strong>Sandwich Panel</strong>
+                                <div class="progress progress-small progress-striped active">
+                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">80%</div>
+                                </div>
+                                <small class="text-muted">Concrete Canvas, 2016/10/29 / 80%</small>
+                            </a>
+                            <a class="list-group-item" href="#">
+                                <strong>Aluminum Panels</strong>
+                                <div class="progress progress-small progress-striped active">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;">95%</div>
+                                </div>
+                                <small class="text-muted">AMD Windows, 2016/10/26 / 95%</small>
+                            </a>
+                        </div>
+                        <div class="panel-footer text-center">
+                            <a href="wo-create.html">Show all tasks</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- END TASKS -->
+            </ul>
+            <!-- END X-NAVIGATION VERTICAL -->
+            <!-- START BREADCRUMB -->
+            <ul class="breadcrumb hide">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Tables</a></li>
+                <li class="active">Data Tables</li>
+            </ul>
+            <!-- END BREADCRUMB -->
+            <!-- PAGE TITLE -->
+            <div class="page-title">
+                <h2><span class="fa fa-arrow-circle-o-left"></span> Work Order List</h2>
+            </div>
+            <!-- END PAGE TITLE -->
+            <!-- PAGE CONTENT WRAPPER -->
+            <div class="page-content-wrap">
+
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <!-- START DEFAULT DATATABLE -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Work Order</h3>
+                                <ul class="panel-controls">
+                                    <li><a href="wo-create.html" title="New Work Order">+</a></li>
+                                    <li><a href="#" class="panel-refresh"><span class="fa fa-refresh"></span></a></li>
+                                    <li><a href="#" class="panel-collapse"><span class="fa fa-angle-down"></span></a></li>
+                                    <!--<li><a href="#" class="panel-remove"><span class="fa fa-times"></span></a></li>-->
+                                </ul>
+                            </div>
+                            <div class="panel-body">
+                                <table class="table datatable table-hover" id="tbody">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th></th>
+                                            <th>WO #</th>
+                                            <th>Customer Name</th>
+                                            <th>Products</th>
+                                            <th>PO #</th>
+                                            <th>Status</th>
+                                            <th>Date Created</th>
+                                            <th>Due Date</th>
+                                            <th>Order Value</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td><input type="checkbox" class="pull-left" /></td>
+                                            <td>WO35478</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Aluminum Panels</td>
+                                            <td>PO87955</td>
+                                            <td>In Prod</td>
+                                            <td>2016/09/25</td>
+                                            <td>2016/10/25</td>
+                                            <td>$320,800</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>2</td>
+                                            <td><input type="checkbox" class="pull-left" /></td>
+                                            <td>WO35452</td>
+                                            <td>Puravankara Const</td>
+                                            <td>Custom Parts</td>
+                                            <td>PO87455</td>
+                                            <td>Delayed</td>
+                                            <td>2016/08/05</td>
+                                            <td>2011/09/25</td>
+                                            <td>$32,080</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>3</td>
+                                            <td><input type="checkbox" class="pull-left" /></td>
+                                            <td>WO45478</td>
+                                            <td>Vinetta Kitchen</td>
+                                            <td>Aluminum Panels</td>
+                                            <td>PO87987</td>
+                                            <td>New</td>
+                                            <td>2016/09/25</td>
+                                            <td>2016/10/25</td>
+                                            <td>$450,800</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4</td>
+                                            <td><input type="checkbox" class="pull-left" /></td>
+                                            <td>WO35778</td>
+                                            <td>i9 Building Envlops</td>
+                                            <td>Store front</td>
+                                            <td>PO47955</td>
+                                            <td>Completed</td>
+                                            <td>2016/09/25</td>
+                                            <td>2016/10/14</td>
+                                            <td>$470,800</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>5</td>
+                                            <td><input type="checkbox" class="pull-left" /></td>
+                                            <td>WO75478</td>
+                                            <td>Concrete Canvas</td>
+                                            <td>Sandwich Panel</td>
+                                            <td>PO87945</td>
+                                            <td>In Prod</td>
+                                            <td>2016/08/05</td>
+                                            <td>2016/10/29</td>
+                                            <td>$19,800</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>6</td>
+                                            <td><input type="checkbox" class="pull-left" /></td>
+                                            <td>WO35898</td>
+                                            <td>Silver cladding</td>
+                                            <td>Sandwich Panel</td>
+                                            <td>PO87925</td>
+                                            <td>Closed</td>
+                                            <td>2016/08/20</td>
+                                            <td>2016/09/15</td>
+                                            <td>$320,800</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>7</td>
+                                            <td><input type="checkbox" class="pull-left" /></td>
+                                            <td>WO35488</td>
+                                            <td>AMD Windows</td>
+                                            <td>Special Backpans</td>
+                                            <td>PO87905</td>
+                                            <td>New</td>
+                                            <td>2016/10/15</td>
+                                            <td>2016/11/05</td>
+                                            <td>$780,800</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>8</td>
+                                            <td><input type="checkbox" class="pull-left" /></td>
+                                            <td>WO35468</td>
+                                            <td>Silver Cladding</td>
+                                            <td>Sandwich Panel</td>
+                                            <td>PO87555</td>
+                                            <td>New</td>
+                                            <td>2016/09/01</td>
+                                            <td>2016/11/25</td>
+                                            <td>$620,800</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>9</td>
+                                            <td><input type="checkbox" class="pull-left" /></td>
+                                            <td>WO35418</td>
+                                            <td>AMD Windows</td>
+                                            <td>Aluminum Panels</td>
+                                            <td>PO87905</td>
+                                            <td>In Prod</td>
+                                            <td>2016/04/25</td>
+                                            <td>2016/10/26</td>
+                                            <td>$520,800</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>10</td>
+                                            <td><input type="checkbox" class="pull-left" /></td>
+                                            <td>WO30478</td>
+                                            <td>i9 Building Envlops</td>
+                                            <td>Aluminum Panels</td>
+                                            <td>PO87005</td>
+                                            <td>Closed</td>
+                                            <td>2016/08/05</td>
+                                            <td>2016/10/15</td>
+                                            <td>$920,800</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>11</td>
+                                            <td><input type="checkbox" class="pull-left" /></td>
+                                            <td>WO35478</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Aluminum Panels</td>
+                                            <td>PO87955</td>
+                                            <td>In Prod</td>
+                                            <td>2016/09/25</td>
+                                            <td>2016/10/25</td>
+                                            <td>$320,800</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>12</td>
+                                            <td><input type="checkbox" class="pull-left" /></td>
+                                            <td>WO35452</td>
+                                            <td>Puravankara Const</td>
+                                            <td>Custom Parts</td>
+                                            <td>PO87455</td>
+                                            <td>Delayed</td>
+                                            <td>2016/08/05</td>
+                                            <td>2011/09/25</td>
+                                            <td>$32,080</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>13</td>
+                                            <td><input type="checkbox" class="pull-left" /></td>
+                                            <td>WO45478</td>
+                                            <td>Vinetta Kitchen</td>
+                                            <td>Aluminum Panels</td>
+                                            <td>PO87987</td>
+                                            <td>New</td>
+                                            <td>2016/09/25</td>
+                                            <td>2016/10/25</td>
+                                            <td>$450,800</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>14</td>
+                                            <td><input type="checkbox" class="pull-left" /></td>
+                                            <td>WO35778</td>
+                                            <td>i9 Building Envlops</td>
+                                            <td>Store front</td>
+                                            <td>PO47955</td>
+                                            <td>Completed</td>
+                                            <td>2016/09/25</td>
+                                            <td>2016/10/14</td>
+                                            <td>$470,800</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>15</td>
+                                            <td><input type="checkbox" class="pull-left" /></td>
+                                            <td>WO75478</td>
+                                            <td>Concrete Canvas</td>
+                                            <td>Sandwich Panel</td>
+                                            <td>PO87945</td>
+                                            <td>In Prod</td>
+                                            <td>2016/08/05</td>
+                                            <td>2016/10/29</td>
+                                            <td>$19,800</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>16</td>
+                                            <td><input type="checkbox" class="pull-left" /></td>
+                                            <td>WO35488</td>
+                                            <td>AMD Windows</td>
+                                            <td>Special Backpans</td>
+                                            <td>PO87905</td>
+                                            <td>New</td>
+                                            <td>2016/10/15</td>
+                                            <td>2016/11/05</td>
+                                            <td>$780,800</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>17</td>
+                                            <td><input type="checkbox" class="pull-left" /></td>
+                                            <td>WO35468</td>
+                                            <td>Silver Cladding</td>
+                                            <td>Sandwich Panel</td>
+                                            <td>PO87555</td>
+                                            <td>New</td>
+                                            <td>2016/09/01</td>
+                                            <td>2016/11/25</td>
+                                            <td>$620,800</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>18</td>
+                                            <td><input type="checkbox" class="pull-left" /></td>
+                                            <td>WO35418</td>
+                                            <td>AMD Windows</td>
+                                            <td>Aluminum Panels</td>
+                                            <td>PO87905</td>
+                                            <td>In Prod</td>
+                                            <td>2016/04/25</td>
+                                            <td>2016/10/26</td>
+                                            <td>$520,800</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>19</td>
+                                            <td><input type="checkbox" class="pull-left" /></td>
+                                            <td>WO30478</td>
+                                            <td>i9 Building Envlops</td>
+                                            <td>Aluminum Panels</td>
+                                            <td>PO87005</td>
+                                            <td>Closed</td>
+                                            <td>2016/08/05</td>
+                                            <td>2016/10/15</td>
+                                            <td>$920,800</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>20</td>
+                                            <td><input type="checkbox" class="pull-left" /></td>
+                                            <td>WO35778</td>
+                                            <td>i9 Building Envlops</td>
+                                            <td>Store front</td>
+                                            <td>PO47955</td>
+                                            <td>Completed</td>
+                                            <td>2016/09/25</td>
+                                            <td>2016/10/14</td>
+                                            <td>$470,800</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>21</td>
+                                            <td><input type="checkbox" class="pull-left" /></td>
+                                            <td>WO75478</td>
+                                            <td>Concrete Canvas</td>
+                                            <td>Sandwich Panel</td>
+                                            <td>PO87945</td>
+                                            <td>In Prod</td>
+                                            <td>2016/08/05</td>
+                                            <td>2016/10/29</td>
+                                            <td>$19,800</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>22</td>
+                                            <td><input type="checkbox" class="pull-left" /></td>
+                                            <td>WO35898</td>
+                                            <td>Silver cladding</td>
+                                            <td>Sandwich Panel</td>
+                                            <td>PO87925</td>
+                                            <td>Closed</td>
+                                            <td>2016/08/20</td>
+                                            <td>2016/09/15</td>
+                                            <td>$320,800</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>23</td>
+                                            <td><input type="checkbox" class="pull-left" /></td>
+                                            <td>WO35898</td>
+                                            <td>Silver cladding</td>
+                                            <td>Sandwich Panel</td>
+                                            <td>PO87925</td>
+                                            <td>Closed</td>
+                                            <td>2016/08/20</td>
+                                            <td>2016/09/15</td>
+                                            <td>$320,800</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>24</td>
+                                            <td><input type="checkbox" class="pull-left" /></td>
+                                            <td>WO35488</td>
+                                            <td>AMD Windows</td>
+                                            <td>Special Backpans</td>
+                                            <td>PO87905</td>
+                                            <td>New</td>
+                                            <td>2016/10/15</td>
+                                            <td>2016/11/05</td>
+                                            <td>$780,800</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>25</td>
+                                            <td><input type="checkbox" class="pull-left" /></td>
+                                            <td>WO35468</td>
+                                            <td>Silver Cladding</td>
+                                            <td>Sandwich Panel</td>
+                                            <td>PO87555</td>
+                                            <td>New</td>
+                                            <td>2016/09/01</td>
+                                            <td>2016/11/25</td>
+                                            <td>$620,800</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- END DEFAULT DATATABLE -->
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- PAGE CONTENT WRAPPER -->
+        </div>
+        <!-- END PAGE CONTENT -->
+    </div>
+    <!-- END PAGE CONTAINER -->
+    <!-- MESSAGE BOX-->
+    <div class="message-box animated fadeIn" data-sound="alert" id="mb-signout">
+        <div class="mb-container">
+            <div class="mb-middle">
+                <div class="mb-title"><span class="fa fa-sign-out"></span> Log <strong>Out</strong> ?</div>
+                <div class="mb-content">
+                    <p>Are you sure you want to log out?</p>
+                    <p>Press No if youwant to continue work. Press Yes to logout current user.</p>
+                </div>
+                <div class="mb-footer">
+                    <div class="pull-right">
+                        <a href="pages-login.html" class="btn btn-success btn-lg">Yes</a>
+                        <button class="btn btn-default btn-lg mb-control-close">No</button>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- END MESSAGE BOX-->
-
-        <!-- START PRELOADS -->
-        <audio id="audio-alert" src="audio/alert.mp3" preload="auto"></audio>
-        <audio id="audio-fail" src="audio/fail.mp3" preload="auto"></audio>
-        <!-- END PRELOADS -->                       
-        
+    </div>
+    <!-- END MESSAGE BOX-->
+    <!-- START PRELOADS -->
+    <audio id="audio-alert" src="audio/alert.mp3" preload="auto"></audio>
+    <audio id="audio-fail" src="audio/fail.mp3" preload="auto"></audio>
+    <!-- END PRELOADS -->
     <!-- START SCRIPTS -->
-        <!-- START PLUGINS -->
-        <script type="text/javascript" src="js/plugins/jquery/jquery.min.js"></script>
-        <script type="text/javascript" src="js/plugins/jquery/jquery-ui.min.js"></script>
-        <script type="text/javascript" src="js/plugins/bootstrap/bootstrap.min.js"></script>        
-        <!-- END PLUGINS -->                
+    <!-- START PLUGINS -->
+    <script type="text/javascript" src="js/plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/plugins/bootstrap/bootstrap.min.js"></script>
+    <!-- END PLUGINS -->
+    <!-- THIS PAGE PLUGINS -->
+    <script type='text/javascript' src='js/plugins/icheck/icheck.min.js'></script>
+    <script type="text/javascript" src="js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js"></script>
 
-        <!-- THIS PAGE PLUGINS -->
-        <script type='text/javascript' src='js/plugins/icheck/icheck.min.js'></script>
-        <script type="text/javascript" src="js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js"></script>
-        
-        <script type="text/javascript" src="js/plugins/datatables/jquery.dataTables.min.js"></script>    
-        <!-- END PAGE PLUGINS -->
+    <script type="text/javascript" src="js/plugins/datatables/jquery.dataTables.min.js"></script>
+    <!-- END PAGE PLUGINS -->
+    <!-- START TEMPLATE -->
+    <!--<script type="text/javascript" src="js/settings.js"></script>-->
 
-        <!-- START TEMPLATE -->
-        <!--<script type="text/javascript" src="js/settings.js"></script>-->
-        
-        <script type="text/javascript" src="js/plugins.js"></script>        
-        <script type="text/javascript" src="js/actions.js"></script>        
-        <!-- END TEMPLATE -->
-        <script>
+    <script type="text/javascript" src="js/plugins.js"></script>
+    <script type="text/javascript" src="js/actions.js"></script>
+    <!-- END TEMPLATE -->
+    <script>
             $(document).on("dblclick", "#tbody tr:has(td)", function (e) {
                 window.location.href="/wo-create.html";
             });
-        </script>
-    <!-- END SCRIPTS --> 
-        
-    </body>
+    </script>
+    <!-- END SCRIPTS -->
+
+</body>
 </html>
 
 
