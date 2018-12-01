@@ -1,0 +1,35 @@
+﻿body {
+}
+
+.circle {
+        display: block;
+        background: #1caf9a;
+        width: 35px;
+        height: 35px;
+        border-radius: 25%;
+        position: relative;
+    }
+
+        .circle:before {
+            display: block;
+            content: "";
+            position: absolute;
+            width: 4px;
+            height: 30px;
+            background: #fff;
+            top: calc(50% - 16px); /* 16px = half of the height */
+            left: calc(50% - 2px); /* 2px = half of the width */
+            border-radius: 1px;
+        }
+
+        .circle:after {
+            display: block;
+            content: "";
+            position: absolute;
+            width: 30px;
+            height: 4px;
+            background: #fff;
+            top: calc(50% - 2px); /* 2px = half of the height */
+            left: calc(50% - 16px); /* 16px = half of the width */
+            border-radius: 1px;
+        }

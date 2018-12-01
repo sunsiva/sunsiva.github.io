@@ -69,9 +69,9 @@ $(function(){
     Morris.Donut({
         element: 'dashboard-donut-1',
         data: [
-            {label: "Returned", value: 2513},
-            {label: "New", value: 764},
-            {label: "Registred", value: 311}
+            { label: "Store Front", value: 2513 },
+            { label: "Aluminium Panels", value: 764 },
+            { label: "Custom Parts", value: 311 }
         ],
         colors: ['#33414E', '#1caf9a', '#FEA223'],
         resize: true

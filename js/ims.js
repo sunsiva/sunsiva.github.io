@@ -12,4 +12,12 @@
         })
     });
 
+        $.get("left-menu.html", function (data) {
+            $("#lefnavmenu").replaceWith(data);
+        });
+
+    $.get("top-menu.html", function (data) {
+        $("#topmenu").replaceWith(data);
+    });
+
 });

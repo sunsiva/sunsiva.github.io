@@ -13,11 +13,8 @@
     <link rel="stylesheet" type="text/css" id="theme" href="css/theme-blue.css" />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <!-- EOF CSS INCLUDE -->
-    <script>
-        $.get("left-menu.html", function (data) {
-            $("#lefnavmenu").replaceWith(data);
-        });
-    </script>
+    <link href="css/ims.css" rel="stylesheet" />
+    
 </head>
 <body>
     <!-- START PAGE CONTAINER -->
@@ -49,9 +46,16 @@
                 <!-- END SEARCH -->
                 <!-- SIGN OUT -->
                 <!--<li class="xn-icon-button pull-right">
-                    <a href="#" class="mb-control" data-box="#mb-signout"><span class="fa fa-sign-out"></span></a>
-                </li>-->
+            <a href="#" class="mb-control" data-box="#mb-signout"><span class="fa fa-sign-out"></span></a>
+        </li>-->
                 <!-- END SIGN OUT -->
+                <li class="xn-icon-button pull-right">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+
+                <li class="push-up-5 pull-right">
+                    <div class="circle"></div>
+                    <a href="#"></a>
+                </li>
+                <li class="xn-icon-button pull-right">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
                 <!-- MESSAGES -->
                 <li class="xn-icon-button pull-right">
                     <a href="#"><span class="fa fa-comments"></span></a>
@@ -122,9 +126,13 @@
                         </div>
                     </div>
                 </li>
+                
+                
                 <!-- END TASKS -->
             </ul>
+
             <!-- END X-NAVIGATION VERTICAL -->
+
             <!-- START BREADCRUMB -->
             <ul class="breadcrumb">
                 <li><a href="#">Home</a></li>
@@ -142,18 +150,18 @@
                         <div class="widget widget-default widget-carousel">
                             <div class="owl-carousel" id="owl-example">
                                 <div>
-                                    <div class="widget-title">Customer</div>
-                                    <div class="widget-subtitle">27/08/2018 15:23</div>
+                                    <div class="widget-title">ORDERS</div>
+                                    <div class="widget-subtitle">New</div>
                                     <div class="widget-int">3,548</div>
                                 </div>
                                 <div>
-                                    <div class="widget-title">RFQ</div>
-                                    <div class="widget-subtitle">Received</div>
+                                    <div class="widget-title">ORDERS</div>
+                                    <div class="widget-subtitle">In Production</div>
                                     <div class="widget-int">1,695</div>
                                 </div>
                                 <div>
-                                    <div class="widget-title">Quotation</div>
-                                    <div class="widget-subtitle">Received</div>
+                                    <div class="widget-title">ORDERS</div>
+                                    <div class="widget-subtitle">Production Complete</div>
                                     <div class="widget-int">1,977</div>
                                 </div>
                             </div>
@@ -167,66 +175,88 @@
                     <div class="col-md-3">
 
                         <!-- START WIDGET MESSAGES -->
-                        <div class="widget widget-default widget-item-icon" onclick="location.href='#';">
-                            <div class="widget-item-left">
-                                <span class="fa fa-envelope"></span>
-                            </div>
-                            <div class="widget-data">
-                                <div class="widget-int num-count">48</div>
-                                <div class="widget-title">New Orders</div>
-                                <div class="widget-subtitle">In mailbox</div>
+                        <div class="widget widget-default widget-carousel">
+                            <div class="owl-carousel" id="owl-example">
+                                <div>
+                                    <div class="widget-title">QUOTE REQUESTS</div>
+                                    <div class="widget-subtitle">New</div>
+                                    <div class="widget-int">1,986</div>
+                                </div>
+                                <div>
+                                    <div class="widget-title">QUOTE REQUESTS</div>
+                                    <div class="widget-subtitle">In Preparation</div>
+                                    <div class="widget-int">2,725</div>
+                                </div>
+                                <div>
+                                    <div class="widget-title">QUOTE REQUESTS</div>
+                                    <div class="widget-subtitle">Sent This Week</div>
+                                    <div class="widget-int">2,001</div>
+                                </div>
                             </div>
                             <div class="widget-controls">
                                 <a href="#" class="widget-control-right widget-remove" data-toggle="tooltip" data-placement="top" title="Remove Widget"><span class="fa fa-times"></span></a>
                             </div>
-                        </div>
-                        <!-- END WIDGET MESSAGES -->
+                            <!-- END WIDGET MESSAGES -->
 
+                        </div>
                     </div>
                     <div class="col-md-3">
 
                         <!-- START WIDGET REGISTRED -->
-                        <div class="widget widget-default widget-item-icon" onclick="location.href='pages-address-book.html';">
-                            <div class="widget-item-left">
-                                <span class="fa fa-user"></span>
-                            </div>
-                            <div class="widget-data">
-                                <div class="widget-int num-count">375</div>
-                                <div class="widget-title">Registred Customers</div>
-                                <div class="widget-subtitle">On website</div>
+                        <div class="widget widget-default widget-carousel">
+                            <div class="owl-carousel" id="owl-example">
+                                <div>
+                                    <div class="widget-title">SHIPPING</div>
+                                    <div class="widget-subtitle">Ready For Shipping</div>
+                                    <div class="widget-int">203</div>
+                                </div>
+                                <div>
+                                    <div class="widget-title">SHIPPING</div>
+                                    <div class="widget-subtitle">In Transit</div>
+                                    <div class="widget-int">1,001</div>
+                                </div>
+                                <div>
+                                    <div class="widget-title">SHIPPING</div>
+                                    <div class="widget-subtitle">Arrived</div>
+                                    <div class="widget-int">2,417</div>
+                                </div>
                             </div>
                             <div class="widget-controls">
                                 <a href="#" class="widget-control-right widget-remove" data-toggle="tooltip" data-placement="top" title="Remove Widget"><span class="fa fa-times"></span></a>
                             </div>
-                        </div>
-                        <!-- END WIDGET REGISTRED -->
+                            <!-- END WIDGET CLOCK -->
 
-                    </div>
+                        </div>
+                    </div>    
                     <div class="col-md-3">
 
                         <!-- START WIDGET CLOCK -->
-                        <div class="widget widget-info widget-padding-sm">
-                            <div class="widget-big-int plugin-clock">00:00</div>
-                            <div class="widget-subtitle plugin-date">Loading...</div>
+                        <div class="widget widget-default widget-carousel">
+                            <div class="owl-carousel" id="owl-example4">
+                                <div>
+                                    <div class="widget-title">COMPLETED ORDERS</div>
+                                    <div class="widget-subtitle">Completed</div>
+                                    <div class="widget-int">1,449</div>
+                                </div>
+                                <div>
+                                    <div class="widget-title">COMPLETED ORDERS</div>
+                                    <div class="widget-subtitle">Closed</div>
+                                    <div class="widget-int">7,451</div>
+                                </div>
+                                <div>
+                                    <div class="widget-title">COMPLETED ORDERS</div>
+                                    <div class="widget-subtitle">On Hold</div>
+                                    <div class="widget-int">3,654</div>
+                                </div>
+                            </div>
                             <div class="widget-controls">
-                                <a href="#" class="widget-control-right widget-remove" data-toggle="tooltip" data-placement="left" title="Remove Widget"><span class="fa fa-times"></span></a>
+                                <a href="#" class="widget-control-right widget-remove" data-toggle="tooltip" data-placement="top" title="Remove Widget"><span class="fa fa-times"></span></a>
                             </div>
-                            <div class="widget-buttons widget-c3">
-                                <div class="col">
-                                    <a href="#"><span class="fa fa-clock-o"></span></a>
-                                </div>
-                                <div class="col">
-                                    <a href="#"><span class="fa fa-bell"></span></a>
-                                </div>
-                                <div class="col">
-                                    <a href="#"><span class="fa fa-calendar"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- END WIDGET CLOCK -->
+                            <!-- END WIDGET CLOCK -->
 
-                    </div>
+                        </div>
                 </div>
+               
                 <!-- END WIDGETS -->
 
                 <div class="row">
@@ -236,8 +266,8 @@
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <div class="panel-title-box">
-                                    <h3>Users Activity</h3>
-                                    <span>Users vs returning</span>
+                                    <h3>Work Orders In That Period</h3>
+                                    <span>Yearly/Monthly/Weekly view</span>
                                 </div>
                                 <ul class="panel-controls" style="margin-top: 2px;">
                                     <li><a href="#" class="panel-fullscreen"><span class="fa fa-expand"></span></a></li>
@@ -264,8 +294,8 @@
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <div class="panel-title-box">
-                                    <h3>Visitors</h3>
-                                    <span>Visitors (last month)</span>
+                                    <h3>Products </h3>
+                                    <span>Made In That Period</span>
                                 </div>
                                 <ul class="panel-controls" style="margin-top: 2px;">
                                     <li><a href="#" class="panel-fullscreen"><span class="fa fa-expand"></span></a></li>
@@ -294,7 +324,7 @@
                             <div class="panel-heading">
                                 <div class="panel-title-box">
                                     <h3>Projects</h3>
-                                    <span>Projects activity</span>
+                                    <span>(End Customer Projects)</span>
                                 </div>
                                 <ul class="panel-controls" style="margin-top: 2px;">
                                     <li><a href="#" class="panel-fullscreen"><span class="fa fa-expand"></span></a></li>
@@ -316,12 +346,12 @@
                                             <tr>
                                                 <th width="50%">Project</th>
                                                 <th width="20%">Status</th>
-                                                <th width="30%">Activity</th>
+                                                <th width="30%">Progress</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td><strong>Joli Admin</strong></td>
+                                                <td><strong>101 Bayview</strong></td>
                                                 <td><span class="label label-danger">Developing</span></td>
                                                 <td>
                                                     <div class="progress progress-small progress-striped active">
@@ -330,8 +360,8 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><strong>Gemini</strong></td>
-                                                <td><span class="label label-warning">Updating</span></td>
+                                                <td><strong>Crystal Cove HQ</strong></td>
+                                                <td><span class="label label-warning">PO Received</span></td>
                                                 <td>
                                                     <div class="progress progress-small progress-striped active">
                                                         <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">40%</div>
@@ -339,8 +369,8 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><strong>Taurus</strong></td>
-                                                <td><span class="label label-warning">Updating</span></td>
+                                                <td><strong>Glenshore Mall</strong></td>
+                                                <td><span class="label label-warning">In Production</span></td>
                                                 <td>
                                                     <div class="progress progress-small progress-striped active">
                                                         <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 72%;">72%</div>
@@ -348,8 +378,8 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><strong>Leo</strong></td>
-                                                <td><span class="label label-success">Support</span></td>
+                                                <td><strong>72 Wall Street</strong></td>
+                                                <td><span class="label label-success">Parts Shipped</span></td>
                                                 <td>
                                                     <div class="progress progress-small progress-striped active">
                                                         <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">100%</div>
@@ -357,8 +387,8 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><strong>Virgo</strong></td>
-                                                <td><span class="label label-success">Support</span></td>
+                                                <td><strong>Glenshore Centrel</strong></td>
+                                                <td><span class="label label-success">Quote Sent</span></td>
                                                 <td>
                                                     <div class="progress progress-small progress-striped active">
                                                         <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">100%</div>
@@ -490,6 +520,7 @@
         </div>
         <!-- END PAGE CONTENT -->
     </div>
+    </div>
     <!-- END PAGE CONTAINER -->
     <!-- START PRELOADS -->
     <audio id="audio-alert" src="audio/alert.mp3" preload="auto"></audio>
@@ -525,7 +556,7 @@
     <script type="text/javascript" src="js/actions.js"></script>
 
     <script type="text/javascript" src="js/demo_dashboard.js"></script>
-
+    <script src="js/ims.js"></script>
     <!-- END TEMPLATE -->
     <!--<script>
         $(document).on("click", "#lOrderMgnt", function (e) {
